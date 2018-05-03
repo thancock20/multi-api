@@ -7,8 +7,8 @@ const Code = ({ children }) => (
       code {
         display: block;
         color: #C7254E;
-        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-        font-size: 13px;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 0.8rem;
         line-height: 1.42857143;
         background-color: #F9F2F4;
         padding: 9.5px;
