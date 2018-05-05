@@ -4,13 +4,15 @@
   "description": "A collection of useful APIs",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "author": "Todd Hancock <thancock20@hotmail.com> (http://www.toddhancock.net/)",
   "license": "MIT",
   "dependencies": {
+    "koa": "^2.5.1",
+    "koa-router": "^7.4.0",
     "next": "^6.0.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
