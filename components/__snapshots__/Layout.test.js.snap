@@ -1,5 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Layout component renders with children and no title 1`] = `
+<div
+  className="jsx-1721279468 container"
+>
+  <SideEffect(Head)>
+    <title
+      className="jsx-1721279468"
+    >
+      Multi-API
+    </title>
+    <meta
+      charSet="utf8"
+      className="jsx-1721279468"
+    />
+    <meta
+      className="jsx-1721279468"
+      content="initial-scale=1, width=device-width"
+      name="viewport"
+    />
+    <link
+      className="jsx-1721279468"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro"
+      rel="stylesheet"
+    />
+  </SideEffect(Head)>
+  <Header
+    title="Multi-API"
+  />
+  Here's the children.
+  <JSXStyle
+    css="*{box-sizing:border-box;}html{font-size:1.5vmax;font-family:'Source Sans Pro',sans-serif;line-height:1.42857143;}body{color:#333;background-color:#fff;}h2{font-family:'Source Serif Pro',serif;font-size:2rem;}.container{width:70vw;margin-left:15vw;}"
+    styleId="1721279468"
+  />
+</div>
+`;
+
+exports[`Layout component renders with children and title 1`] = `
+<div
+  className="jsx-1721279468 container"
+>
+  <SideEffect(Head)>
+    <title
+      className="jsx-1721279468"
+    >
+      Multi-API | Here's the title
+    </title>
+    <meta
+      charSet="utf8"
+      className="jsx-1721279468"
+    />
+    <meta
+      className="jsx-1721279468"
+      content="initial-scale=1, width=device-width"
+      name="viewport"
+    />
+    <link
+      className="jsx-1721279468"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro"
+      rel="stylesheet"
+    />
+  </SideEffect(Head)>
+  <Header
+    title="Here's the title"
+  />
+  Here's the children.
+  <JSXStyle
+    css="*{box-sizing:border-box;}html{font-size:1.5vmax;font-family:'Source Sans Pro',sans-serif;line-height:1.42857143;}body{color:#333;background-color:#fff;}h2{font-family:'Source Serif Pro',serif;font-size:2rem;}.container{width:70vw;margin-left:15vw;}"
+    styleId="1721279468"
+  />
+</div>
+`;
+
 exports[`Layout component renders with title and children 1`] = `
 <div
   className="jsx-1721279468 container"
