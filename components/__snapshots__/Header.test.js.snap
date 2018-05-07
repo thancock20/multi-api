@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders with a title 1`] = `
+<header
+  className="jsx-1919171108"
+>
+  <h1
+    className="jsx-1919171108"
+  >
+    This is the title
+  </h1>
+  <JSXStyle
+    css="header.jsx-1919171108{text-align:center;}h1.jsx-1919171108{color:inherit;font-size:2.5rem;font-family:'Source Serif Pro',serif;}"
+    styleId="1919171108"
+  />
+</header>
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Code component renders with children 1`] = `
+<pre
+  className="jsx-627414563"
+>
+  <code
+    className="jsx-627414563"
+  >
+    \`const x = 1; console.log(x);\`
+  </code>
+  <JSXStyle
+    css="code.jsx-627414563{display:block;color:#c7254e;font-family:'Source Code Pro',monospace;font-size:0.8rem;line-height:1.42857143;background-color:#f9f2f4;padding:9.5px;margin:0 0 10px;border:1px solid #ccc;border-radius:4px;}"
+    styleId="627414563"
+  />
+</pre>
+`;
