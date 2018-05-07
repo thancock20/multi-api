@@ -1,16 +1,19 @@
-import Head from 'next/head'
-import Header from './Header'
+import Head from 'next/head';
+import Header from './Header';
 
 const Layout = ({ children, title }) => (
-  <div className='container'>
+  <div className="container">
     <Head>
-      <title>{ title ? `Multi-API | ${title}` : 'Multi-API' }</title>
-      <meta charset='utf8' />
-      <meta name='viewport' content='initial-scale=1, width=device-width' />
-      <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro" rel="stylesheet" />
+      <title>{title ? `Multi-API | ${title}` : 'Multi-API'}</title>
+      <meta charSet="utf8" />
+      <meta name="viewport" content="initial-scale=1, width=device-width" />
+      <link
+        href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro"
+        rel="stylesheet"
+      />
     </Head>
-    <Header title={ title || 'Multi-API' }/>
-    { children }
+    <Header title={title || 'Multi-API'} />
+    {children}
     <style jsx global>{`
       * {
         box-sizing: border-box;
@@ -24,7 +27,7 @@ const Layout = ({ children, title }) => (
 
       body {
         color: #333;
-        background-color: #FFF;
+        background-color: #fff;
       }
 
       h2 {
@@ -38,6 +41,6 @@ const Layout = ({ children, title }) => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Layout
+export default Layout;

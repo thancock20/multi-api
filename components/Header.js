@@ -1,6 +1,6 @@
 const Header = ({ title }) => (
   <header>
-    <h1>{ title }</h1>
+    <h1>{title}</h1>
     <style jsx>{`
       header {
         text-align: center;
@@ -13,6 +13,6 @@ const Header = ({ title }) => (
       }
     `}</style>
   </header>
-)
+);
 
-export default Header
+export default Header;

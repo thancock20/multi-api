@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
   },
-  "author": "Todd Hancock <thancock20@hotmail.com> (http://www.toddhancock.net/)",
+  "author":
+    "Todd Hancock <thancock20@hotmail.com> (http://www.toddhancock.net/)",
   "license": "MIT",
   "dependencies": {
     "koa": "^2.5.1",
@@ -16,5 +17,14 @@
     "next": "^6.0.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier-eslint": "^8.8.1"
   }
 }

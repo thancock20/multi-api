@@ -8,29 +8,30 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
-app.prepare()
-.then(() => {
-  const server = new Koa();
-  const router = new Router();
+app
+  .prepare()
+  .then(() => {
+    const server = new Koa();
+    const router = new Router();
 
-  router.use('/api', Api.routes(), Api.allowedMethods());
+    router.use('/api', Api.routes(), Api.allowedMethods());
 
-  router.get('*', async ctx => {
-    await handle(ctx.req, ctx.res);
-    ctx.respond = false;
+    router.get('*', async ctx => {
+      await handle(ctx.req, ctx.res);
+      ctx.respond = false;
+    });
+
+    server.use(async (ctx, next) => {
+      ctx.res.statusCode = 200;
+      await next();
+    });
+
+    server.use(router.routes());
+    server.listen(port, () => {
+      console.log(`> Ready on http://localhost:${port}`);
+    });
+  })
+  .catch(ex => {
+    console.error(ex.stack);
+    process.exit(1);
   });
-
-  server.use(async (ctx, next) => {
-    ctx.res.statusCode = 200;
-    await next();
-  });
-
-  server.use(router.routes());
-  server.listen(port, () => {
-    console.log(`> Ready on http://localhost:${port}`);
-  });
-})
-.catch((ex) => {
-  console.error(ex.stack);
-  process.exit(1);
-})
