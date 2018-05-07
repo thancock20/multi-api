@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "test": "NODE_ENV=test jest",
+    "test:watch": "npm test -- --watch --notify",
+    "test:coverage": "npm test -- --coverage"
   },
   "author":
     "Todd Hancock <thancock20@hotmail.com> (http://www.toddhancock.net/)",
@@ -20,11 +23,21 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
+    "babel-jest": "^22.4.3",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-react": "^7.7.0",
-    "prettier-eslint": "^8.8.1"
+    "jest": "^22.4.3",
+    "prettier-eslint": "^8.8.1",
+    "react-test-renderer": "^16.3.2"
+  },
+  "jest": {
+    "setupFiles": ["./test/jestsetup.js"],
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 }
