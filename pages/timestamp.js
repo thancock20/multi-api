@@ -1,5 +1,6 @@
 import Code from '../components/Code';
 import Layout from '../components/Layout';
+import getHostname from '../utils/get-hostname';
 
 const Timestamp = ({ hostname }) => (
   <Layout title="Timestamp">
@@ -29,18 +30,6 @@ const Timestamp = ({ hostname }) => (
   </Layout>
 );
 
-Timestamp.getInitialProps = ({ req }) => {
-  if (req) {
-    return {
-      hostname: `http://${req.headers.host}`
-    };
-  }
-  return {
-    hostname:
-      location.hostname === 'localhost'
-        ? `http://localhost:${location.port}`
-        : `${location.protocol}//${location.hostname}`
-  };
-};
+Timestamp.getInitialProps = ({ req }) => ({ hostname: getHostname(req) });
 
 export default Timestamp;
