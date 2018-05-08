@@ -18,6 +18,7 @@
     "koa-router": "^7.4.0",
     "moment": "^2.22.1",
     "next": "^6.0.0",
+    "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   },
@@ -31,6 +32,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jest": "^21.15.1",
     "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.3",
     "prettier-eslint": "^8.8.1",

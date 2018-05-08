@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Head from 'next/head';
 import Header from './Header';
 
@@ -43,5 +44,10 @@ const Layout = ({ children, title }) => (
     `}</style>
   </div>
 );
+
+Layout.propTypes = {
+  children: PropTypes.node,
+  title: PropTypes.string
+};
 
 export default Layout;

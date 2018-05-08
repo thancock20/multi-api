@@ -21,6 +21,7 @@ app
       ctx.respond = false;
     });
 
+    // eslint-disable-next-line no-shadow
     server.use(async (ctx, next) => {
       ctx.res.statusCode = 200;
       await next();
@@ -28,10 +29,12 @@ app
 
     server.use(router.routes());
     server.listen(port, () => {
+      // eslint-disable-next-line no-console
       console.log(`> Ready on http://localhost:${port}`);
     });
   })
   .catch(ex => {
+    // eslint-disable-next-line no-console
     console.error(ex.stack);
     process.exit(1);
   });

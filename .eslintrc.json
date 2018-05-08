@@ -1,8 +1,12 @@
 {
   "extends": ["airbnb-base", "prettier", "plugin:react/recommended"],
-  "plugins": ["react"],
+  "plugins": ["react", "jest"],
   "env": {
+    "jest/globals": true,
     "browser": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": 0
   },
   "parser": "babel-eslint",
   "parserOptions": {
