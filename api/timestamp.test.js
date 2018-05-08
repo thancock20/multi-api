@@ -19,5 +19,6 @@ describe('Timestamp function', () => {
     const date = { date: 'cucumber' };
     const received = timestamp(date);
     const expected = { unix: null, natural: null };
+    expect(received).toEqual(expected);
   });
 });
