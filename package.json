@@ -11,12 +11,12 @@
     "test:watch": "npm test -- --watch --notify",
     "test:coverage": "npm test -- --coverage"
   },
-  "author":
-    "Todd Hancock <thancock20@hotmail.com> (http://www.toddhancock.net/)",
+  "author": "Todd Hancock <thancock20@hotmail.com> (http://www.toddhancock.net/)",
   "license": "MIT",
   "dependencies": {
     "koa": "^2.5.1",
     "koa-router": "^7.4.0",
+    "moment": "^2.22.1",
     "next": "^6.0.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
@@ -37,7 +37,11 @@
     "react-test-renderer": "^16.3.2"
   },
   "jest": {
-    "setupFiles": ["./test/jestsetup.js"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "setupFiles": [
+      "./test/jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

@@ -1,9 +1,10 @@
 const Router = require('koa-router');
+const timestamp = require('./timestamp');
 
 const router = new Router();
 
-router.get('/', ctx => {
-  ctx.body = 'Hello, World!';
+router.get('/timestamp/:date', ctx => {
+  ctx.body = timestamp(ctx.params);
 });
 
 module.exports = router;
