@@ -33,6 +33,7 @@ const Layout = ({ children, title }) => (
       h2 {
         font-family: 'Source Serif Pro', serif;
         font-size: 2rem;
+        margin-bottom: 0;
       }
 
       .container {
