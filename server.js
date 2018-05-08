@@ -1,6 +1,7 @@
 const Koa = require('koa');
 const next = require('next');
 const Router = require('koa-router');
+const userAgent = require('koa-useragent');
 const Api = require('./api/router');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
@@ -14,6 +15,7 @@ app
     const server = new Koa();
     const router = new Router();
 
+    server.use(userAgent);
     router.use('/api', Api.routes(), Api.allowedMethods());
 
     router.get('*', async ctx => {
