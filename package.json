@@ -9,9 +9,11 @@
     "start": "NODE_ENV=production node server.js",
     "test": "NODE_ENV=test jest",
     "test:watch": "npm test -- --watch --notify",
-    "test:coverage": "npm test -- --coverage"
+    "test:coverage": "npm test -- --coverage",
+    "deploy": "now --public && now alias && now rm multi-api --safe --yes"
   },
-  "author": "Todd Hancock <thancock20@hotmail.com> (http://www.toddhancock.net/)",
+  "author":
+    "Todd Hancock <thancock20@hotmail.com> (http://www.toddhancock.net/)",
   "license": "MIT",
   "dependencies": {
     "koa": "^2.5.1",
@@ -40,11 +42,11 @@
     "react-test-renderer": "^16.3.2"
   },
   "jest": {
-    "setupFiles": [
-      "./test/jestsetup.js"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
+    "setupFiles": ["./test/jestsetup.js"],
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
+  },
+  "now": {
+    "name": "multi-api",
+    "alias": "multi-api.now.sh"
   }
 }
