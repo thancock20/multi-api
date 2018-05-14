@@ -12,4 +12,8 @@ router.get('/parser', ctx => {
   ctx.body = parser(ctx);
 });
 
+router.get('*', ctx => {
+  ctx.body = [];
+});
+
 module.exports = router;
