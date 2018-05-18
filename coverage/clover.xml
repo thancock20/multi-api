@@ -1,9 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1525732308420" clover="3.2.0">
-  <project timestamp="1525732308420" name="All files">
-    <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3" elements="17" coveredelements="17" complexity="0" loc="10" ncloc="10" packages="2" files="4" classes="4">
+<coverage generated="1526631978569" clover="3.2.0">
+  <project timestamp="1526631978569" name="All files">
+    <metrics statements="40" coveredstatements="40" conditionals="16" coveredconditionals="16" methods="12" coveredmethods="12" elements="68" coveredelements="68" complexity="0" loc="40" ncloc="40" packages="4" files="9" classes="9">
+      <package name="api">
+        <metrics statements="23" coveredstatements="23" conditionals="12" coveredconditionals="12" methods="9" coveredmethods="9"/>
+        <file name="create-shurl.js" path="/home/todd/workspace/multi-api/api/create-shurl.js">
+          <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="13" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="14" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+        </file>
+        <file name="open-shurl.js" path="/home/todd/workspace/multi-api/api/open-shurl.js">
+          <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="4" count="1" type="stmt"/>
+        </file>
+        <file name="parser.js" path="/home/todd/workspace/multi-api/api/parser.js">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+        <file name="timestamp.js" path="/home/todd/workspace/multi-api/api/timestamp.js">
+          <metrics statements="7" coveredstatements="7" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="3" type="stmt"/>
+          <line num="7" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="10" count="3" type="stmt"/>
+          <line num="15" count="3" type="stmt"/>
+        </file>
+      </package>
+      <package name="api.models">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="shurl.js" path="/home/todd/workspace/multi-api/api/models/shurl.js">
+          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="10" count="2" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+        </file>
+      </package>
       <package name="components">
-        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
         <file name="Code.js" path="/home/todd/workspace/multi-api/components/Code.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="1" count="1" type="stmt"/>
@@ -15,19 +65,20 @@
           <line num="2" count="1" type="stmt"/>
         </file>
         <file name="Layout.js" path="/home/todd/workspace/multi-api/components/Layout.js">
-          <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-          <line num="4" count="1" type="stmt"/>
-          <line num="5" count="2" type="stmt"/>
+          <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="48" count="1" type="stmt"/>
         </file>
       </package>
       <package name="test">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="jestsetup.js" path="/home/todd/workspace/multi-api/test/jestsetup.js">
           <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="5" count="3" type="stmt"/>
-          <line num="8" count="3" type="stmt"/>
-          <line num="9" count="3" type="stmt"/>
-          <line num="10" count="3" type="stmt"/>
+          <line num="5" count="7" type="stmt"/>
+          <line num="8" count="7" type="stmt"/>
+          <line num="9" count="7" type="stmt"/>
+          <line num="10" count="7" type="stmt"/>
         </file>
       </package>
     </metrics>
