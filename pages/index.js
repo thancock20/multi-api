@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Code from '../components/Code';
 import Layout from '../components/Layout';
 
 const Index = () => (
@@ -13,6 +12,11 @@ const Index = () => (
       <li>
         <Link href="/parser">
           <a>Request Header Parser</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/shurl">
+          <a>URL Shortener</a>
         </Link>
       </li>
     </ul>

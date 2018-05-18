@@ -12,14 +12,15 @@
     "test:coverage": "npm test -- --coverage",
     "deploy": "now --public && now alias && now rm multi-api --safe --yes"
   },
-  "author":
-    "Todd Hancock <thancock20@hotmail.com> (http://www.toddhancock.net/)",
+  "author": "Todd Hancock <thancock20@hotmail.com> (http://www.toddhancock.net/)",
   "license": "MIT",
   "dependencies": {
     "koa": "^2.5.1",
     "koa-router": "^7.4.0",
     "koa-useragent": "^1.1.0",
     "moment": "^2.22.1",
+    "mongoose": "^5.1.1",
+    "mongoose-plugin-autoinc": "^1.1.9",
     "next": "^6.0.0",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
@@ -38,12 +39,17 @@
     "eslint-plugin-jest": "^21.15.1",
     "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.3",
+    "mockingoose": "^2.9.1",
     "prettier-eslint": "^8.8.1",
     "react-test-renderer": "^16.3.2"
   },
   "jest": {
-    "setupFiles": ["./test/jestsetup.js"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "setupFiles": [
+      "./test/jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "now": {
     "name": "multi-api",
