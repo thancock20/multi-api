@@ -7,7 +7,7 @@ const createShurl = require('./create-shurl');
 const openShurl = require('./open-shurl');
 
 const router = new Router();
-mongoose.connect('mongodb://localhost:27017/multi-api');
+mongoose.connect(process.env.DB || 'mongodb://localhost:27017/multi-api');
 
 const Shurl = require('./models/shurl');
 
