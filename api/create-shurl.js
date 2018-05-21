@@ -1,9 +1,6 @@
 const isValid = url => url.search(/^https*:\/\/.*\..*$/) !== -1;
 
-const saveShurl = async (url, Shurl) => {
-  const shurl = new Shurl({ original_url: url });
-  return shurl.save();
-};
+const saveShurl = async (url, Shurl) => Shurl.create({ original_url: url });
 
 const idToShurl = ({ origin, path }, id) => `${origin}${path}/${id}`;
 
