@@ -12,4 +12,4 @@ const formatTimestamp = timestamp => ({
   natural: timestamp.isValid() ? moment(timestamp).format('MMMM D, YYYY') : null
 });
 
-module.exports = ({ date }) => formatTimestamp(getTimestamp(date));
+module.exports = date => formatTimestamp(getTimestamp(date));

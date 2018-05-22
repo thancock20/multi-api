@@ -12,7 +12,7 @@ mongoose.connect(process.env.DB || 'mongodb://localhost:27017/multi-api');
 const Shurl = require('./models/shurl');
 
 router.get('/timestamp/:date', ctx => {
-  ctx.body = timestamp(ctx.params);
+  ctx.body = timestamp(ctx.params.date);
 });
 
 router.get('/parser', ctx => {
