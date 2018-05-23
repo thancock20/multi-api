@@ -19,6 +19,11 @@ const Index = () => (
           <a>URL Shortener</a>
         </Link>
       </li>
+      <li>
+        <Link href="/isearch">
+          <a>Image Search Abstraction Layer</a>
+        </Link>
+      </li>
     </ul>
   </Layout>
 );

@@ -8,3 +8,6 @@ Enzyme.configure({ adapter: new Adapter() });
 global.shallow = shallow;
 global.render = render;
 global.mount = mount;
+
+// Configure dotenv to use environment variables in tests
+require('dotenv').config();
