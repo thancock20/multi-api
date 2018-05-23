@@ -13,6 +13,7 @@ const Code = ({ children }) => (
         margin: 0 0 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
+        overflow-x: scroll;
       }
     `}</style>
   </pre>
