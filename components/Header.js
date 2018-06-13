@@ -1,3 +1,9 @@
+import PropTypes from 'prop-types';
+
+const propTypes = {
+  title: PropTypes.string
+};
+
 const Header = ({ title }) => (
   <header>
     <h1>{title}</h1>
@@ -14,5 +20,7 @@ const Header = ({ title }) => (
     `}</style>
   </header>
 );
+
+Header.propTypes = propTypes;
 
 export default Header;

@@ -1,3 +1,4 @@
+/* eslint "jsx-a11y/anchor-is-valid": 0 */
 import Link from 'next/link';
 import Layout from '../components/Layout';
 

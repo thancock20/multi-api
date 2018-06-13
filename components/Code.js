@@ -1,3 +1,9 @@
+import PropTypes from 'prop-types';
+
+const propTypes = {
+  children: PropTypes.string
+};
+
 const Code = ({ children }) => (
   <pre>
     <code>{children}</code>
@@ -18,5 +24,7 @@ const Code = ({ children }) => (
     `}</style>
   </pre>
 );
+
+Code.propTypes = propTypes;
 
 export default Code;

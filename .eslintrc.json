@@ -1,6 +1,11 @@
 {
-  "extends": ["airbnb-base", "prettier", "plugin:react/recommended"],
-  "plugins": ["react", "jest"],
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/strict"
+  ],
+  "plugins": ["react", "jest", "jsx-a11y"],
   "env": {
     "jest/globals": true,
     "browser": true
@@ -14,5 +19,10 @@
     "ecmaFeatures": {
       "jsx": true
     }
+  },
+  "globals": {
+    "shallow": false,
+    "render": false,
+    "mount": false
   }
 }

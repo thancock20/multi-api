@@ -31,8 +31,8 @@ class Shurl extends React.Component {
           </li>
           <li>
             If I pass an invalid URL that does not follow the valid{' '}
-            <a>http://www.example.com</a> format, the JSON response will contain
-            an error instead.
+            &quot;http://www.example.com&quot; format, the JSON response will
+            contain an error instead.
           </li>
         </ul>
 
