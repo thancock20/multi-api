@@ -53,7 +53,8 @@
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ]
+    ],
+    "testURL": "http://localhost"
   },
   "now": {
     "name": "multi-api",
