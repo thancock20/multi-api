@@ -64,7 +64,7 @@
     "name": "multi-api",
     "alias": "multi-api.now.sh",
     "env": {
-      "PORT": 8000,
+      "PORT": "8000",
       "DB": "@db",
       "CSE_CX": "@csecx",
       "CSE_KEY": "@csekey"
