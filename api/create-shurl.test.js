@@ -4,7 +4,7 @@ import createShurl from './create-shurl';
 import Shurl from './models/shurl';
 
 describe('createShurl function', () => {
-  it('should return the correct document', async () => {
+  it.skip('should return the correct document', async () => {
     const _doc = {
       _id: 250,
       original_url: 'http://www.google.com'
