@@ -19,7 +19,7 @@
     "koa": "^2.5.1",
     "koa-router": "^7.4.0",
     "koa-useragent": "^1.1.0",
-    "moment": "^2.22.1",
+    "moment": "^2.29.2",
     "mongoose": "^5.4.13",
     "mongoose-plugin-autoinc": "^1.1.9",
     "next": "^8.0.1",
