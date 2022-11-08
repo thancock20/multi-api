@@ -22,7 +22,7 @@
     "moment": "^2.22.1",
     "mongoose": "^5.4.13",
     "mongoose-plugin-autoinc": "^1.1.9",
-    "next": "^8.0.1",
+    "next": "^13.0.2",
     "node-fetch": "^2.1.2",
     "prettier": "^1.14.2",
     "prop-types": "^15.6.1",
